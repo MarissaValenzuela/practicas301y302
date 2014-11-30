@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Entre_14
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Variables
+            int numero, residuo;
+            numero = System.Int32.Parse(txtNum.Text);
+            residuo = numero % 14;
+   
+            if (residuo == 0)
+            {
+                lblDividir.Text="DIVISBLE";
+            }
+            else 
+            {
+                lblDividir.Text = "NO DIVISILE";
+            } 
+            
+
+        }
+    }
+}
